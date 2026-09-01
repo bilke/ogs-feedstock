@@ -11,7 +11,7 @@ source:
   sha256: f4db3a64abb7832edca46f54d7d5917c9f389be07c137fc92df749d8a44688de
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
   ignore_run_exports:
     - libboost-python
@@ -51,8 +51,6 @@ requirements:
   run:
     - tetgen
     - python
-    # Python 3.14 no longer propagates this shared library as a direct run requirement.
-    - libpython  # [py>=314]
     - mfront 5.1                           # [linux]
     - mgis 3.1                             # [linux]
     - tbb
